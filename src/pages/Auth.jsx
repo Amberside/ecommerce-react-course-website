@@ -57,6 +57,7 @@ const Auth = () => {
             </div>
             <button className="btn btn-primary btn-large" type="submit">{ mode === "signup" ? "Sign Up" : "Login" }</button>
             <div className="auth-switch">
+              {/* note: this span should be a button */}
               {
                 mode === "signup" ?
                 <p>Already have an account? <span className="auth-link" onClick={() => setMode("login")}>Login</span></p> :
